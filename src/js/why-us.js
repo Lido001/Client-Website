@@ -43,7 +43,7 @@
   }); 
   
  
-  const textArray = ["TAMILLOFT","siva"];
+  const textArray = ["TAMILLOFT",];
     let currentTextIndex = 0;
     let currentCharIndex = 0;
     const typeWriterElement = document.getElementById('typewriter');
