@@ -1,0 +1,286 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+.body{
+    scroll-behavior: smooth;
+}
+
+.cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none; /* Allow clicking elements behind the cursor */
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference; /* Enables color inversion effect */
+    transition: width 0.3s ease, height 0.3s ease;
+    transition-delay: 2s;
+    z-index: 2;
+}
+
+.nav-link{
+    color: white;
+    font-size: larger;
+    border: 2px solid transparent;
+    align-self: center;    
+}
+
+.nav-link:hover{
+    border-bottom:2px solid red;
+    transition: .1s;
+}
+#header{
+    background-color: #00000d;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(240.00, 0%, 9%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(240.00, 82%, 2%) 0, transparent 55%)
+}
+#grid-1{
+    border-radius: 15px; padding: 30px; padding-top: 50px; border: solid 1px;
+    width: 100%; transition: .7s;
+}
+#grid-1:hover{
+    transform: translateY(-25px);
+    
+}
+#brand-logo{
+    padding-left: 10px;
+    width: 250px ; 
+    height: 50px;
+}
+#section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+#section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+#section-3{
+    background-color: black;
+    width: 100%;
+}
+#schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: start;
+}
+#box-content{
+    width: 55%;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+#image-1{
+    position: absolute;
+}
+#image-2{
+    position: absolute;
+}
+#p-text{
+    width: 50rem;
+}
+#sec-4-div{
+    background-color: #29707a;
+    overflow-x: hidden;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: orangered; 
+  }
+
+
+
+@media (max-width:768px) {
+    #p-text{
+        width: 45rem;
+    }
+    #Reach-us{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+    #schedule-h1{
+        text-align: center;
+    }
+    .nav-link{
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width:576px) {
+    #brand-logo{
+        width: 140px;
+        height: 50px;
+    }
+    #grid{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    #grid-1{
+        width: 100%;
+        padding: 10px;
+        padding-top: 2px;
+    }
+    #button{
+        width: 10rem;
+    }
+    #big-text{
+        margin-bottom: 1.5rem;
+    }
+    #schedule{
+        padding: 3rem;
+        margin-bottom: 1.5rem;       
+    }
+    #sec-4-div{
+        margin-bottom: 3rem;
+    }
+    #sec-5-div{
+        padding: 3rem;
+        margin-bottom: 3rem;
+    }
+    #picture{
+        padding-top: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    #button-1{
+        width: 11em;
+        position: absolute;
+    }
+    #button-2{
+        width: 11em;
+        position: absolute;
+    }
+    #button-span{
+        position: relative;
+        right: 1.2rem;
+        font-size: large;
+    }
+    #footer-div{
+        padding-top: 3rem;
+    }
+    #footer-img{
+        padding-bottom: .8rem;
+    }
+    #footer-inner-div{
+        margin-bottom: 3rem;
+    }
+    #box-content{
+        width: 95%;
+    }
+    #header{
+        margin-bottom: 1.8rem;
+    }
+    #section-2{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #p-text{
+        width: 24rem;
+    }
+    #tamilloft-text{
+        font-size: 60px;
+    }
+    #Reach-us{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+        margin: 0;
+    }
+    #schedule-h1{
+        text-align: center;
+    }
+    #schedule-h2{
+        font-size: 4.5rem;
+    }
+    .nav-link{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:320px) {
+    #p-text{
+        width: 18rem;
+    }
+    #tamilloft-text{
+        font-size: 3rem;
+    }
+}
+
+
+
+
+@media (min-width:576px) {
+    #footer-outer-div-1{
+        text-align: right;
+    }
+    #footer-outer-div-2{
+        text-align: center;
+    }
+    #footer-outer-div-3{
+        text-align: left;
+    }
+    #button-2-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: appear 2s ease-in-out 0.5s 1 normal forwards;
+    } 
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+
+
+

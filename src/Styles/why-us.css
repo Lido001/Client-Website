@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.body{
+    scroll-behavior: smooth;
+    scroll-timeline: 1s;
+}
+
+.nav-link{
+    color: white;
+    font-size: larger;
+    border: 2px solid transparent;
+    
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid red;
+    transition: .3s;
+}
+.counter{
+    font-size: 3rem; font-weight: 600; color: rgba(255, 255, 255, 0.652);
+}
+#brand-logo{
+    width: 250px;
+    height: 50px;
+}
+#header-why{
+    /* background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(160.00, 0%, 0%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%); */
+
+        /* background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(160.00, 0%, 0%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(240.00, 0%, 0%) 0, transparent 55%); */
+
+        background-color: #090e1b;
+        background-image: 
+            radial-gradient(at 47% 33%, hsl(160.00, 0%, 0%) 0, transparent 59%), 
+            radial-gradient(at 82% 65%, hsl(240.00, 0%, 0%) 0, transparent 55%);
+}
+#card-outer-div{
+    width: 15rem; height: 15rem; border: solid 1px;left: 6rem; top: 25.5rem; 
+    border: solid 1px; position: absolute; z-index: 2;
+    animation: appear-left 2s ease-in-out 0s 1 normal forwards;
+
+
+    backdrop-filter: blur(11px) saturate(150%);
+    -webkit-backdrop-filter: blur(11px) saturate(150%);
+    background-color: rgba(17, 25, 40, 1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#card-outer-div-right{
+    width: 15rem; height: 15rem; border: solid 1px;right: 6rem; top: 55.2rem; 
+    border: solid 1px; position: absolute;
+    animation: appear-right 2s ease-in-out 0s 1 normal forwards;
+
+    backdrop-filter: blur(11px) saturate(150%);
+    -webkit-backdrop-filter: blur(11px) saturate(150%);
+    background-color: rgba(17, 25, 40, 1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#card{
+    backdrop-filter: blur(11px) saturate(150%);
+    -webkit-backdrop-filter: blur(11px) saturate(150%);
+    background-color: rgba(17, 25, 40, 1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+#database-svg{
+    width: 3.8rem;
+    height: 3.6rem; 
+    color: white;
+    padding: .2rem;
+    padding-bottom: .4rem;
+    background-color: rgba(0, 0, 0, 0.525); box-shadow: 0 0 30px 3px #48abe0;
+    border: solid 3px white;
+    border-radius: 6px;
+}
+#why-section-1{
+    background-color: #081121;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(223.33, 50%, 7.000000000000001%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(217.24, 28.000000000000004%, 18%) 0, transparent 55%);
+}
+#why-image{
+    width: 75rem; height: auto; object-fit: contain; position: relative;
+}
+#tamilloft-heading{
+    font-size: 5rem;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: orangered; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.typewriter {
+    /* font-family: monospace; */
+    font-size: 5rem;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.652);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 3.8rem;
+    background-color: #fff;
+    margin-left: 5px;
+    animation: blink 1.5s step-start infinite;
+}
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+    100%{
+        background-color: #fff;
+    }
+}
+
+@keyframes appear-left {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes appear-right {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:1440px) {
+    #card-outer-div{
+        left: 4rem;
+        top: 25.8rem;
+    }
+    #card-outer-div-right{
+        right: 4rem;
+    }
+}
+
+@media (max-width:1024px) {
+    #card-outer-div{
+        width: 13rem;
+        height: 13rem;
+        left: 2rem;
+        top: 26.8rem;
+    }
+    #card-outer-div-right{
+        width: 13rem;
+        height: 13rem;
+        right: 2rem;
+        top: 47.5rem;
+    }
+    #why-image{
+        width: 56rem;
+    }
+    /* #card-text{
+        padding-top: 1rem;
+        margin: 0;
+    } */
+}
+
+@media (max-width:768px) {
+    #card-outer-div{
+        width: 8rem;
+        height: 8rem;
+        left: 5px;
+        top: 18.6rem;
+    }
+    #card-outer-div-right{
+        width: 8rem;
+        height: 8rem;
+        right: 5px;
+        top: 35.5rem;
+    }
+    #why-image{
+        width: 44rem;
+    }
+    #database-svg{
+        width: 2rem;
+        height: 2rem;
+        box-shadow: 0 0 10px 1px #48abe0;
+    }
+    #card-text{
+        font-size: .8rem;
+        margin: 0;
+        text-wrap: nowrap;
+        padding-top: .5rem;
+    }
+    #Reach-us{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+    .nav-link{
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+@media (max-width:576px) {
+    #brand-logo{
+        width: 140px;
+        height: 50px;
+    }
+    #footer-div{
+        padding-top: 3rem;
+    }
+    #footer-img{
+        padding-bottom: .8rem;
+    }
+    #footer-inner-div{
+        margin-bottom: 3rem;
+    }
+    #tamilloft-heading{
+        font-size: 3rem;
+        
+    }
+    #card-outer-div{
+        width: 4.5rem;
+        height: 4.5rem;
+        left: 5px;
+        top: 12.3rem;
+    }
+    #card-outer-div-right{
+        width: 4.5rem;
+        height: 4.5rem;
+        right: 5px;
+        top: 23rem;
+    }
+    #database-svg{
+        width: 2rem;
+        height: 1.8rem;
+        box-shadow: 0 0 5px 1px #48abe0;
+    }
+    #card-text{
+        font-size: .5rem;
+        margin: 0;
+        padding-top: 0;
+    }
+    #Reach-us{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+        margin: 0;
+    }
+    .nav-link{
+        text-align: center;
+    }
+    .typewriter{
+        font-size: 3rem;
+        display: block;       
+    }
+    .cursor{
+        height: 3rem;
+        display: none;       
+    }
+    .grid{
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width:375px) {
+    #card-outer-div-right{
+        top: 10rem;
+    }
+}
+
+@media (max-width:320px) {
+    #card-outer-div-right{
+        top: 18.8rem;
+    }
+}
+
+
+
+
+
+

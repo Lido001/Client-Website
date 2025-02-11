@@ -1,0 +1,94 @@
+:root{
+
+    /* CUSTOM COLORS AND BACKGROUND COLORS */
+
+    --bs-custom-orange: rgba(255, 68, 0, 0.833); /* Custom orange */
+    --bs-custom-black: #000000;
+    --bs-custom-whitesmoke: #f5f5f5;
+    --bs-custom-bluesmoke: rgb(114, 134, 150);
+    --bs-white: #ffffff;
+    --bs-custom-liteblue: #E4F4FF;
+    --bs-custom-darkgrey: rgba(73, 73, 73, 0.814);
+    --bs-custom-greygrey: rgba(85, 84, 84, 0.905);
+    --bs-custom-grey: rgb(100, 101, 101);
+    --bs-custom-gridgrey: #f2f1ee;
+    --bs-custom-darkgreen: #042315;
+    --bs-custom-lightgreen:  rgba(41, 112, 122, .3);
+    --bs-custom-lightgrey: rgba(255, 255, 255, 0.652);
+    --bs-custom-litegrey: #f2f1ee;
+
+
+    /* CUSTOM FONT SIZES AND WEIGHTS */
+
+    --font-custom-arial:  Arial, Helvetica, sans-serif;
+
+}
+
+/* CUSTOM BACKGROUND COLORS */
+.bg-custom-orange{
+    background-color: var(--bs-custom-orange) !important;
+}
+.bg-custom-black{
+    background-color: var(--bs-custom-black) !important;
+}
+.bg-custom-whitesmoke{
+    background-color: var(--bs-custom-whitesmoke) !important;
+}
+.bg-custom-liteblue{
+    background-color: var(--bs-custom-liteblue) !important;
+}
+.bg-custom-gridgrey{
+    background-color: var(--bs-custom-gridgrey) !important;
+}
+.bg-custom-darkgreen{
+    background-color: var(--bs-custom-darkgreen) !important;
+}
+.bg-custom-lightgreen{
+    background-color: var(--bs-custom-lightgreen) !important;
+}
+.bg-custom-litegrey{
+    background-color: var(--bs-custom-litegrey) !important;
+}
+
+/* CUSTOM TEXT COLORS */
+
+.text-custom-bluesmoke{
+    color: var(--bs-custom-bluesmoke) !important;
+}
+.text-custom-whitesmoke{
+    color: var(--bs-custom-whitesmoke) !important;
+}
+.text-custom-white{
+    color: var(--bs-white) !important;
+}
+.text-custom-black{
+    color: var(--bs-custom-black) !important;
+}
+.text-custom-darkgrey{
+    color: var(--bs-custom-darkgrey) !important;
+}
+.text-custom-greygrey{
+    color: var(--bs-custom-greygrey) !important;
+}
+.text-custom-grey{
+    color: var(--bs-custom-grey) !important;
+}
+.text-custom-lightgrey{
+    color: var(--bs-custom-lightgrey) !important;
+}
+
+/* CUSTOM FONT SIZES */
+
+
+.text-custom-arial{
+    font-family: var(--font-custom-arial) !important;
+}
+
+#custom-width{
+    width: 50%;
+}
+@media (max-width:576px) {
+    #custom-width{
+        width: 100%;
+    }
+}
